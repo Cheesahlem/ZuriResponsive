@@ -1,0 +1,99 @@
+body{
+	background-image: url('img/bg-intro-desktop.png');
+	background-color: #ff4b3e;
+	font-family: sans-serif;
+}
+
+main {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	font-size: 35px;
+}
+.first{
+	width: 400px;
+	color: white;
+	margin: auto;
+}
+
+.first p {
+	line-height: 25px;
+}
+
+.second {
+	width: 50%;
+}
+
+.second .upper-text {
+	background-color:#6625ad;
+	color: white;
+	padding: 15px;
+    text-align: center;
+    box-shadow: 1px 5px 5px #3c3737;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form  {
+	background-color: white;
+	padding: 30px;
+	box-shadow: 1px 5px 5px #3c3737;
+	border-radius: 5px;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 95%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 15px;
+	font-weight: bolder;
+}
+	
+button {
+	background:#14bb57;
+	color: white;
+	text-transform: uppercase;
+	border-style: hidden;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+}
+button:active {
+	background-color: #6625ad;
+	border: 5px white;
+}
+p.bottom-text {
+	text-align: center;
+	color: grey;
+	font-size: 13px;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	body{
+	background-image: url('img/bg-intro-mobile.png');
+	background-color: #ff4b3e;
+	}
+
+	main {
+		display: block;
+	}
+	.first {
+		text-align: center;
+		width: 85%;
+	}
+	.second{
+		width: 100%;
+	}
+}

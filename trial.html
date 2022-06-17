@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grid layout</title>
+	<link rel="stylesheet" type="text/css" href="trial.css">
+</head>
+<body>
+	<main>
+		<div class="first">
+			<h1>Learn to code by watching others</h1>
+			<p>
+				See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+			</p>
+		</div>
+
+		<div class="second">
+			<div>
+			<p class="upper-text">
+				<b>Try it free 7 days </b> then $20/mo. thereafter
+			</p>
+			</div>
+
+			<div class="form">
+
+				<form action="#">
+					<input type="name" name="firstName" placeholder="First Name" required>
+					<br>
+					<input type="name" name="lastName" placeholder="Last Name" required>
+					<br>
+					<input type="email" name="email" placeholder="Email Address" required>
+					<br>
+					<input type="text" name="pswd" id="pass" placeholder="Password" required>
+				</form>
+
+				<button type="submit" onclick="wrong_pass()">Claim your free trial</button>
+				<br>
+				<p class="bottom-text">
+					<small>By clicking this button, you are registering to our <a href="#">Terms and Services</a></small>
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		function wrong_pass() {
+			if (document.getElementById('pass').value!="") {
+				alert("Your response is submitted!");
+			} else {
+				alert("Please fill all required fields");
+			}
+		}
+		
+	</script>
+</body>
+</html>
